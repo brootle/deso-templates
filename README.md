@@ -13,7 +13,9 @@ Right now there are 2 simple apps in ReactJS and NextJS, NextJS app is same Reac
 
 To see apps in action you must have profile at DeSo. 
 These template apps are deployed to Netlify and Vercel from this repository. Here are the links:
+
 https://deso-template.netlify.app/	- ReactJS
+
 https://deso-template.vercel.app/	- NextJS
 
 Those apps are using DeSo Identity JavaScript library to create and sign transactions https://www.npmjs.com/package/@deso-core/identity 
