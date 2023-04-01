@@ -1,3 +1,19 @@
+Add `transpilePackages: ['@deso-core/identity']` into next.config.js so it looks like this 
+
+	/** @type  {import('next').NextConfig} */
+	const  nextConfig = {
+		reactStrictMode:  true,
+		transpilePackages: ['@deso-core/identity'],
+	}
+	module.exports = nextConfig
+This is needed to be able to import https://www.npmjs.com/package/@deso-core/identity which is ES6 module
+
+Use dynamic import of your component where Identity is imported, this is needed because Identity is relying on `window` and `window` only exists on client side.
+
+	import  dynamic  from  'next/dynamic'
+	const  Template = dynamic(() =>  import("../components/Template"), { ssr:  false });
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
