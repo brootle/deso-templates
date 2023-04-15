@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Head>
         <title>DeSo Template App</title>
-        <meta name="description" content="Template of DeSo app in ReactJS by @btrootle" />
+        <meta name="description" content="Template of DeSo app in NextJS by @btrootle" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

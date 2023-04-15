@@ -254,6 +254,8 @@ export default function Template() {
   return (
     <div className="App">
 
+      <div className='layoutBackground'></div>
+
       <header className='headerContainer'>
 
         <div className='headerLeft'>
