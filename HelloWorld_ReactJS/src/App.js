@@ -2,7 +2,7 @@ import 'normalize.css';
 import './App.css';
 
 import { useState, useEffect, useRef } from "react"
-import { identity } from "@deso-core/identity"
+import { identity } from 'deso-protocol'
 
 import {
   getSingleProfile,
