@@ -1,6 +1,6 @@
 // import dynamic from 'next/dynamic'
 import { useState, useEffect, useRef } from "react"
-import { identity } from "@deso-core/identity"
+import { identity, configure } from 'deso-protocol'
 //const {identity}  = dynamic(() => import('@deso-core/identity'), { ssr: false })
 
 import {
@@ -150,7 +150,7 @@ export default function Template() {
     if(isRunned.current) return;
     isRunned.current = true;
   
-    identity.configure({
+    configure({
       spendingLimitOptions: {
         // NOTE: this value is in Deso nanos, so 1 Deso * 1e9
         GlobalDESOLimit: 0.1 * 1e9, // 1 Deso

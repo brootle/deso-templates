@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@deso-core/identity": "^0.1.7",
+    "deso-protocol": "^1.1.13",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
